@@ -1,0 +1,33 @@
+body {   
+  margin: 0; 
+  padding:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  color: black;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  margin-left: 25px;
+  text-align: center;
+}
+
+h4 {
+  color: grey;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+  color: darkblue;
+  margin-left: 8rem;
+}
+
+img {
+  width: auto;
+  height: 200px;
+}
