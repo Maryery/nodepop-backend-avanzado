@@ -345,11 +345,11 @@ El endpoint /anuncios in our API it allows us to consult, paginate, and filter d
 
 ## Body Params:
 
-    * name : String. Name of article.
-    * sell: Boolean. If the item is true, for sale. if it is false, it is searched.
-    * Price: Number. Price of the article.
-    * Photo: String. Article photo.
-    * Tags: String. It may contain one or more of these four: [work, lifestyle, motor and mobile]
+* name : String. Name of article.
+* sell: Boolean. If the item is true, for sale. if it is false, it is searched.
+* Price: Number. Price of the article.
+* Photo: String. Article photo.
+* Tags: String. It may contain one or more of these four: [work, lifestyle, motor and mobile]
 
 Example
 
