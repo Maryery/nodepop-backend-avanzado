@@ -1,0 +1,20 @@
+h1 {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.page-section .page-section-heading {
+    margin-top: 2rem;
+    font-size: 2rem;
+}    
+
+table, th, td {
+    font-size: 25px;
+    border: 1px solid white;
+    color: white;
+    margin-left: 10rem;
+}
+  
+img {
+    width: auto;
+    height: 100px;

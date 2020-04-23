@@ -17,7 +17,7 @@ router.get('/', async function (req, res, next) {
       throw(dbData[1]);
     }
     res.render('index', {
-      title: 'Nodepop',
+      title: 'NODEPOP',
       data: dbData,
     });
   }
