@@ -4,10 +4,20 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+
 var app = express();
 
 // connect to the database
 require('./lib/connectMongoose');
+
+/**
+ * Setup de i18n
+ */
+const i18n = require('./lib/i18nConfigure')();
+app.use(i18n.init);
+
+// i18n.setLocale('es');
+// console.log(i18n.__('BIENVENIDOS A'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

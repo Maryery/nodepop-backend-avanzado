@@ -7,6 +7,8 @@
 var app = require('../app');
 var debug = require('debug')('nodepop:server');
 var http = require('http');
+//var https = require('https');
+//const fs = require('fs');
 
 /**
  * Get port from environment and store in Express.
@@ -18,6 +20,11 @@ app.set('port', port);
 /**
  * Create HTTP server.
  */
+//const options = {
+//  key: fs.readFileSync('./certs/example.com+5-key.pem'),
+//  cert: fs.readFileSync('./certs/example.com+5.pem')
+//};
+
 
 var server = http.createServer(app);
 
