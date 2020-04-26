@@ -18,3 +18,17 @@ table, th, td {
 img {
     width: auto;
     height: 100px;
+}
+
+.container .select-languages a {
+    color: white;
+    border: 1px solid white;
+    margin-right: 5px;
+    border-radius: 3px;
+    text-decoration: none; 
+}
+
+.container .select-languages a:hover {
+    color: #1abc9c;
+}
+

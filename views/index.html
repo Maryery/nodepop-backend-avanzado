@@ -2,10 +2,10 @@
   </section>
     <!-- About Section-->
     <section class="page-section bg-primary text-white mb-0" id="about">
-      <h1>BIENVENIDOS A  <%= title %></h1>
+      <h1><%= __('BIENVENIDOS A') %> <%= title %></h1>
       <div class="container">
         <!-- About Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-white">ANUNCIOS</h2>
+        <h2 class="page-section-heading text-center text-uppercase text-white"><%=__('ANUNCIOS') %></h2>
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
           <div class="divider-custom-line"></div>
@@ -16,11 +16,11 @@
           <div class="row">
             <table>
               <tr>
-                <th>Artículo</th>
-                <th>Compra/venta</th>
-                <th>Precio</th>
-                <th>Foto</th>
-                <th>Categoría</th>
+                <th><%= __('Artículo') %></th>
+                <th><%= __('Compra/venta') %></th>
+                <th><%= __('Precio') %></th>
+                <th><%= __('Foto') %></th>
+                <th><%= __('Categoría') %></th>
               </tr>
               <% for(var i=0; i < data.length; i++) { %>
               <tr>
@@ -39,7 +39,7 @@
     <section class="page-section portfolio" id="portfolio">
       <div class="container">
           <!-- Portfolio Section Heading-->
-          <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">¿QUÉ ESTAS BUSCANDO?</h2>
+          <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"><%=__('¿QUÉ ESTAS BUSCANDO?') %></h2>
           <!-- Icon Divider-->
           <div class="divider-custom">
               <div class="divider-custom-line"></div>
