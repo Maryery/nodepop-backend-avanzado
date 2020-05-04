@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 // create an schema
 const anuncioSchema = mongoose.Schema({
-    name: String,
+    name: { type: String, index: true },
     sell: Boolean,
     price: Number,
     photo: String,

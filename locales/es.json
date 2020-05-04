@@ -5,7 +5,6 @@
 	"Precio": "Precio",
 	"Foto": "Foto",
 	"Categoría": "Categoría",
-	"Anuncios": "Anuncios",
 	"ANUNCIOS": "ANUNCIOS",
 	"¿QUÉ ESTAS BUSCANDO?": "¿QUÉ ESTAS BUSCANDO?",
 	"Dirección": "Dirección",
@@ -16,5 +15,6 @@
 	"con licencia MIT de uso gratuito creado por": "con licencia MIT de uso gratuito creado por",
 	"Entrar": "Entrar",
 	"Salir": "Salir",
-	"SOBRE NODEPOP": "SOBRE NODEPOP"
+	"SOBRE NODEPOP": "SOBRE NODEPOP",
+	"Home": "Home"
 }

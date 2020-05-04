@@ -8,7 +8,7 @@ var logger = require('morgan');
 var app = express();
 
 // connect to the database
-require('./lib/connectMongoose');
+const mongooseConnection = require('./lib/connectMongoose');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -27,20 +27,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 const i18n = require('./lib/i18nConfigure')();
 app.use(i18n.init);
 
-// i18n.setLocale('es');
-// console.log(i18n.__('BIENVENIDOS A'));
+const loginController = require('./routes/loginController');
+const jwtAuth = require('./lib/jwtAuth');
 
 /**
  * API routes
  */
 app.use('/anuncios', require('./routes/api/anuncios'));
-app.use('/api/anuncios', require('./routes/api/anuncios'));
+app.use('/api/anuncios', jwtAuth(), require('./routes/api/anuncios'));
 app.use('/tags', require('./routes/api/tags'));
+app.use('/api/authenticate', loginController.postJWT);
 
 /**
  * WEBSITES routes
  */
-
 app.use('/', require('./routes/index'));
 app.use('/about', require('./routes/about'));
 app.use('/change-locale', require('./routes/change-locale'));

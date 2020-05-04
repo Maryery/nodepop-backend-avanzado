@@ -1,13 +1,17 @@
 'use strict';
 
+require('dotenv').config();
+
 const conn = require('./lib/connectMongoose');
 const Anuncio = require('./models/Anuncio');
 const Tag = require('./models/Tag.js');
+const Usuario = require('./models/Usuario');
 
 conn.once('open', async () => {
   try {
 
     await initAnuncios();
+    await initUsuarios();
     await initTags();
     conn.close();
 
@@ -34,5 +38,15 @@ async function initTags() {
     { tag: 'work' },
     { tag: 'motor' },
     { tag: 'mobile' },
+  ]);
+}
+
+async function initUsuarios() {
+  await Usuario.deleteMany();
+  await Usuario.insertMany([
+    { 
+      email: 'user@example.com',
+      password: await Usuario.hashPassword('1234'),
+    }
   ]);
 }

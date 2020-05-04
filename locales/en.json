@@ -5,9 +5,6 @@
 	"Foto": "Photo",
 	"Categoría": "Category",
 	"BIENVENIDOS A": "WELCOME TO",
-	"Entrar": "LOGIN",
-	"Anuncios": "Ads",
-	"Salir": "lOGOUT",
 	"ANUNCIOS": "Ads",
 	"¿QUÉ ESTAS BUSCANDO?": "¿WHAT ARE YOU LOOKING FOR?",
 	"Dirección": "Location",
@@ -16,5 +13,6 @@
 	"sobre": "about",
 	"Freelancer es un tema de": "Freelancer is a free to use",
 	"con licencia MIT de uso gratuito creado por": "MIT licensed theme created by",
-	"SOBRE NODEPOP": "ABOUT NODEPOP"
+	"SOBRE NODEPOP": "ABOUT NODEPOP",
+	"Home": "Home"
 }
