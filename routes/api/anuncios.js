@@ -55,22 +55,27 @@ router.get('/', async (req, res, next) => {
       next(err);
     }    
 });
+  
+const multer = require('multer');
+const upload = multer({ dest: './public/assets/img'});
 
 // POST /api/anuncios
-// Create an ad
+// Create a new Ad
 
-router.post('/', async (req, res, next) => {
+router.post('/', upload.single('photo'),  async (req,res,next) => {
   try {
+    req.body.photo = req.file.filename;
     const anuncioData = req.body;
-    // Create an objt in memory
+
+    // Create an obj in memory
     const anuncio = new Anuncio(anuncioData);
 
-    // We keep it in the DB 
+    // We keep it in the DB
     const anuncioGuardado = await anuncio.save();
 
     res.status(201).json({ result : anuncioGuardado });
 
-  } catch(err){
+  } catch(err) {
     next(err);
   }
 });
