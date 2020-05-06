@@ -373,7 +373,9 @@ Example
 
 [POST] http://localhost:3000/api/anuncios
 
-Headers Content-Type: application/x-www-form-urlencoded Body name: Bicycle, sell: false, price: 200, photo:'bicycle.jpg', tags: lifestyle, tags: motor
+For this you will have to use a Postman type request software
+
+Headers Content-Type: application/form-data Body name: Bicycle, sell: false, price: 200, photo:File, tags: lifestyle, tags: motor
 
 ```sh
 status: 201 created
