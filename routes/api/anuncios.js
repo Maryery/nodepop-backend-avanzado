@@ -56,15 +56,15 @@ router.get('/', async (req, res, next) => {
     }    
 });
   
-const multer = require('multer');
-const upload = multer({ dest: './public/assets/img'});
-
 // POST /api/anuncios
 // Create a new Ad
 
-router.post('/', upload.single('photo'),  async (req,res,next) => {
+const Requester = require('../../lib/microservices/thumbClient');
+
+router.post('/',  async (req,res,next) => {
+  console.log(req.file);
   try {
-    req.body.photo = req.file.filename;
+    req.body.photo = req.file.originalname;
     const anuncioData = req.body;
 
     // Create an obj in memory
@@ -74,7 +74,8 @@ router.post('/', upload.single('photo'),  async (req,res,next) => {
     const anuncioGuardado = await anuncio.save();
 
     res.status(201).json({ result : anuncioGuardado });
-
+    Requester(req.file.originalname);
+    console.log(anuncioGuardado);
   } catch(err) {
     next(err);
   }
