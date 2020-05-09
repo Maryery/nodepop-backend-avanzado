@@ -6,6 +6,29 @@
 
 <p>Backend to support a second-hand goods sales app.</p>
 
+## news of the advanced version
+
+* Advanced Nodepop is updated by incorporating the bootstrap template 'Freelancer'.
+
+* Advanced Nodepop uses an .env file to store passwords and generally private information that is not updated in the repository.
+
+* Advanced Nodepop has photo upload for ads.
+Now Postman's POST requests, must be made of type 'form-data' and change the type of photo file. It goes from being a string (where the url was entered manually), to be a file that can be selected from Postman itself.
+
+* Advanced Nodepop, uses microservices for the thumbnail generation of each photo, that is uploaded.
+
+A Client and a Server have been created.
+
+The Client launches the request to generate a thumbnail with the url of an image recently uploaded to the server. That is, it starts with the application itself.
+
+The Server receives the request, generates the image thumbnail, saves it in the same folder and responds with the image url. To start it:
+
+Go to / lib / microservices and run:
+
+```sh
+nodemon thumbService.js
+```
+
 ## Installation requirements
 
 * node >= V12.13.1
