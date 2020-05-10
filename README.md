@@ -6,11 +6,13 @@
 
 <p>Backend to support a second-hand goods sales app.</p>
 
-## news of the advanced version
+## News of the Advanced Version
 
-* Advanced Nodepop is updated by incorporating the bootstrap template 'Freelancer'.
+* Advanced Nodepop, is updated by incorporating the bootstrap template 'Freelancer'.
 
-* Advanced Nodepop uses an .env file to store passwords and generally private information that is not updated in the repository.
+* Advanced Nodepop, uses an .env file to store passwords and generally private information, that is not updated in the repository.
+
+* Advanced Nodepop, converts the frontend of the ads in multi-language, it has a language selector, which can change from Spanish to English or vice versa.
 
 * Advanced Nodepop has photo upload for ads.
 Now Postman's POST requests, must be made of type 'form-data' and change the type of photo file. It goes from being a string (where the url was entered manually), to be a file that can be selected from Postman itself.
