@@ -42,8 +42,8 @@ nodemon thumbService.js
 ## Install
 
 ```sh
-git clone http://github.com/Maryery/nodepop.git
-cd nodepop
+git clone https://github.com/Maryery/nodepop-backend-avanzado.git
+cd nodepop-backend-avanzado
 npm install
 ```
 
